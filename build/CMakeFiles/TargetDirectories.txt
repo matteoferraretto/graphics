@@ -1,0 +1,5 @@
+C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/SDLProject.dir
+C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/matte/Documents/Study_C++/graphics/build/lib/CMakeFiles/MyLibrary.dir
+C:/Users/matte/Documents/Study_C++/graphics/build/lib/CMakeFiles/ALL_BUILD.dir
