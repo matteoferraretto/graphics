@@ -1,6 +1,7 @@
 #pragma once;
 #include <SDL.h>
 #include "Constants.h"
+#include "Rectangle.h"
 
 // Class for circle
 class Circle
@@ -22,6 +23,7 @@ public:
     bool CheckCollisionWithRightEdge(Circle circle);
     bool CheckCollisionWithBottomEdge(Circle circle);
     bool CheckCollisionWithTopEdge(Circle circle);
+    void CheckCollisionWithRectangle(SDL_Surface * surface, Circle &circle, Rectangle rectangle);
     void FillCircle(SDL_Surface * surface, int color);
     void EraseCircle(SDL_Surface * surface);
     void MoveCircleUniformly(SDL_Surface * surface, Circle & circle, float & vx, float & vy);
