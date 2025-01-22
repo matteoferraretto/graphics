@@ -10,6 +10,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Include SDL paths
 set(SDL2_INCLUDE_DIR "C:/Users/matte/C++_libraries/SDL2-devel-2.30.11-VC/SDL2-2.30.11/include")
 set(SDL2_LIB_DIR "C:/Users/matte/C++_libraries/SDL2-devel-2.30.11-VC/SDL2-2.30.11/lib/x86")
+set(SDL2_TTF_INCLUDE_DIR "C:/Users/matte/C++_libraries/SDL2_ttf-devel-2.24.0-VC/SDL2_ttf-2.24.0/include")
+set(SDL2_TTF_LIB_DIR "C:/Users/matte/C++_libraries/SDL2_ttf-devel-2.24.0-VC/SDL2_ttf-2.24.0/lib/x86")
+
 
 # Add executable
 add_executable(SDLProject main.cpp)
@@ -20,12 +23,12 @@ include_directories(${CMAKE_SOURCE_DIR}/lib/include)
 add_subdirectory(lib)
 
 # Link SDL2 libraries
-target_include_directories(SDLProject PRIVATE ${SDL2_INCLUDE_DIR})
-target_link_directories(SDLProject PRIVATE ${SDL2_LIB_DIR})
-target_link_libraries(SDLProject MyLibrary SDL2 SDL2main)
+target_include_directories(SDLProject PRIVATE ${SDL2_INCLUDE_DIR} PRIVATE ${SDL2_TTF_INCLUDE_DIR})
+target_link_directories(SDLProject PRIVATE ${SDL2_LIB_DIR} PRIVATE ${SDL2_TTF_LIB_DIR})
+target_link_libraries(SDLProject MyLibrary SDL2 SDL2main SDL2_ttf)
 
 # Copy SDL2.dll to the build folder
 add_custom_command(TARGET SDLProject POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
-    "${SDL2_LIB_DIR}/SDL2.dll"
+    "${SDL2_LIB_DIR}/SDL2.dll" "${SDL2_TTF_LIB_DIR}/SDL2_ttf.dll"
     $<TARGET_FILE_DIR:SDLProject>)

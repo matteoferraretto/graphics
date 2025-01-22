@@ -209,9 +209,6 @@ MyLibrary_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 MyLibrary_SOURCE_DIR:STATIC=C:/Users/matte/Documents/Study_C++/graphics/lib
 
-//The directory containing a CMake configuration file for SDL2.
-SDL2_DIR:PATH=SDL2_DIR-NOTFOUND
-
 //Value Computed by CMake
 SDLProject_BINARY_DIR:STATIC=C:/Users/matte/Documents/Study_C++/graphics/build
 

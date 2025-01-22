@@ -37,20 +37,20 @@ void Circle::EraseCircle(SDL_Surface * surface){
         }
     }
 };
-bool Circle::CheckCollisionWithRightEdge(Circle circle){
-    if(circle.x0 + circle.r >= 1.0f * SCREEN_WIDTH){ return true; }
+bool Circle::CheckCollisionWithRightEdge(void){
+    if(this->x0 + this->r >= 1.0f * SCREEN_WIDTH){ return true; }
     else { return false; }
 }
-bool Circle::CheckCollisionWithLeftEdge(Circle circle){
-    if(circle.x0 - circle.r <= 0.0f){ return true; }
+bool Circle::CheckCollisionWithLeftEdge(void){
+    if(this->x0 - this->r <= 0.0f){ return true; }
     else { return false; }
 }
-bool Circle::CheckCollisionWithBottomEdge(Circle circle){
-    if(circle.y0 + circle.r >= 1.0f * SCREEN_HEIGHT){ return true; }
+bool Circle::CheckCollisionWithBottomEdge(void){
+    if(this->y0 + this->r >= 1.0f * SCREEN_HEIGHT){ return true; }
     else { return false; }
 }
-bool Circle::CheckCollisionWithTopEdge(Circle circle){
-    if(circle.y0 - circle.r <= 0.0f){ return true; }
+bool Circle::CheckCollisionWithTopEdge(void){
+    if(this->y0 - this->r <= 0.0f){ return true; }
     else { return false; }
 }
 void Circle::CheckCollisionWithRectangle(SDL_Surface * surface, Circle &circle, Rectangle rectangle){
@@ -121,16 +121,16 @@ void Circle::CheckCollisionWithRectangle(SDL_Surface * surface, Circle &circle, 
 
 void Circle::MoveCircleUniformly(SDL_Surface * surface, Circle &circle, float &vx, float & vy){
     circle.EraseCircle(surface);
-    if(CheckCollisionWithBottomEdge(circle)){
+    if(circle.CheckCollisionWithBottomEdge()){
         circle.vy = - circle.vy;
     }
-    else if(CheckCollisionWithTopEdge(circle)){
+    else if(circle.CheckCollisionWithTopEdge()){
         circle.vy = -circle.vy;
     }
-    if(CheckCollisionWithLeftEdge(circle)){
+    if(circle.CheckCollisionWithLeftEdge()){
         circle.vx = - circle.vx;
     }
-    else if(CheckCollisionWithRightEdge(circle)){
+    else if(circle.CheckCollisionWithRightEdge()){
         circle.vx = - circle.vx;
     }
     circle.x0 = circle.x0 + circle.vx;
@@ -144,7 +144,7 @@ void Circle::MoveCircleUnderGravity(SDL_Surface * surface, Circle &circle, float
     //SDL_Rect rect = {(int) floor(circle.x0-circle.r), (int) floor(circle.y0-circle.r), (int) ceil(2*circle.r)+2, (int) ceil(2*circle.r)+2};
     //SDL_FillRect(surface, &rect, COLOR_BLACK);
     // if collision, modify position 
-    if(CheckCollisionWithBottomEdge(circle)){ 
+    if(circle.CheckCollisionWithBottomEdge()){ 
         circle.y0 = 1.0f*SCREEN_HEIGHT - circle.r;
         circle.vy = -circle.vy * FRICTION_AFTER_BOUNCE;
     }
