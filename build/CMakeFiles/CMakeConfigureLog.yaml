@@ -26,7 +26,7 @@ events:
       Microsoft (R) Build Engine versione 15.9.21+g9802d43bc3 per .NET Framework
       Copyright (C) Microsoft Corporation. Tutti i diritti sono riservati.
       
-      Compilazione avviata 22/01/2025 23:18:04.
+      Compilazione avviata 24/01/2025 02:41:11.
       Progetto "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\3.29.3\\CompilerIdC\\CompilerIdC.vcxproj" sul nodo 1 (destinazioni predefinite).
       PrepareForBuild:
         Creazione directory "Debug\\".
@@ -52,7 +52,7 @@ events:
           Avvisi: 0
           Errori: 0
       
-      Tempo trascorso 00:00:01.45
+      Tempo trascorso 00:00:00.61
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -80,7 +80,7 @@ events:
       Microsoft (R) Build Engine versione 15.9.21+g9802d43bc3 per .NET Framework
       Copyright (C) Microsoft Corporation. Tutti i diritti sono riservati.
       
-      Compilazione avviata 22/01/2025 23:18:06.
+      Compilazione avviata 24/01/2025 02:41:12.
       Progetto "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\3.29.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" sul nodo 1 (destinazioni predefinite).
       PrepareForBuild:
         Creazione directory "Debug\\".
@@ -106,7 +106,7 @@ events:
           Avvisi: 0
           Errori: 0
       
-      Tempo trascorso 00:00:01.24
+      Tempo trascorso 00:00:00.57
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -125,8 +125,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-5l5nts"
-      binary: "C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-5l5nts"
+      source: "C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-ntfwd0"
+      binary: "C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-ntfwd0"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -135,41 +135,41 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-5l5nts'
+        Change Dir: 'C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-ntfwd0'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" cmTC_afc3e.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" cmTC_c6bea.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:n
         Microsoft (R) Build Engine versione 15.9.21+g9802d43bc3 per .NET Framework
         Copyright (C) Microsoft Corporation. Tutti i diritti sono riservati.
         
-        Compilazione avviata 22/01/2025 23:18:08.
-        Progetto "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5l5nts\\cmTC_afc3e.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Compilazione avviata 24/01/2025 02:41:13.
+        Progetto "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ntfwd0\\cmTC_c6bea.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_afc3e.dir\\Debug\\".
-          Creazione directory "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5l5nts\\Debug\\".
-          Creazione directory "cmTC_afc3e.dir\\Debug\\cmTC_afc3e.tlog\\".
+          Creazione directory "cmTC_c6bea.dir\\Debug\\".
+          Creazione directory "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ntfwd0\\Debug\\".
+          Creazione directory "cmTC_c6bea.dir\\Debug\\cmTC_c6bea.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_afc3e.dir\\Debug\\cmTC_afc3e.tlog\\unsuccessfulbuild". È stato specificato "AlwaysCreate".
+          Creazione di "cmTC_c6bea.dir\\Debug\\cmTC_c6bea.tlog\\unsuccessfulbuild". È stato specificato "AlwaysCreate".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_afc3e.dir\\Debug\\\\" /Fd"cmTC_afc3e.dir\\Debug\\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c6bea.dir\\Debug\\\\" /Fd"cmTC_c6bea.dir\\Debug\\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.16.27025.1 per x86
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
           
-          cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_afc3e.dir\\Debug\\\\" /Fd"cmTC_afc3e.dir\\Debug\\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c6bea.dir\\Debug\\\\" /Fd"cmTC_c6bea.dir\\Debug\\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
           
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5l5nts\\Debug\\cmTC_afc3e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-5l5nts/Debug/cmTC_afc3e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-5l5nts/Debug/cmTC_afc3e.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_afc3e.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_afc3e.vcxproj -> C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5l5nts\\Debug\\cmTC_afc3e.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ntfwd0\\Debug\\cmTC_c6bea.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-ntfwd0/Debug/cmTC_c6bea.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-ntfwd0/Debug/cmTC_c6bea.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_c6bea.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_c6bea.vcxproj -> C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ntfwd0\\Debug\\cmTC_c6bea.exe
         FinalizeBuildStatus:
-          Eliminazione del file "cmTC_afc3e.dir\\Debug\\cmTC_afc3e.tlog\\unsuccessfulbuild" in corso.
-          Aggiornamento timestamp di "cmTC_afc3e.dir\\Debug\\cmTC_afc3e.tlog\\cmTC_afc3e.lastbuildstate".
-        Compilazione progetto "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5l5nts\\cmTC_afc3e.vcxproj" (destinazioni predefinite) completata.
+          Eliminazione del file "cmTC_c6bea.dir\\Debug\\cmTC_c6bea.tlog\\unsuccessfulbuild" in corso.
+          Aggiornamento timestamp di "cmTC_c6bea.dir\\Debug\\cmTC_c6bea.tlog\\cmTC_c6bea.lastbuildstate".
+        Compilazione progetto "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ntfwd0\\cmTC_c6bea.vcxproj" (destinazioni predefinite) completata.
         
         Compilazione completata.
             Avvisi: 0
             Errori: 0
         
-        Tempo trascorso 00:00:01.21
+        Tempo trascorso 00:00:00.72
         
       exitCode: 0
   -
@@ -209,8 +209,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-14j879"
-      binary: "C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-14j879"
+      source: "C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-8qmxuh"
+      binary: "C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-8qmxuh"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -220,41 +220,41 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-14j879'
+        Change Dir: 'C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-8qmxuh'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" cmTC_c43ae.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" cmTC_33611.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:n
         Microsoft (R) Build Engine versione 15.9.21+g9802d43bc3 per .NET Framework
         Copyright (C) Microsoft Corporation. Tutti i diritti sono riservati.
         
-        Compilazione avviata 22/01/2025 23:18:10.
-        Progetto "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-14j879\\cmTC_c43ae.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Compilazione avviata 24/01/2025 02:41:14.
+        Progetto "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8qmxuh\\cmTC_33611.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_c43ae.dir\\Debug\\".
-          Creazione directory "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-14j879\\Debug\\".
-          Creazione directory "cmTC_c43ae.dir\\Debug\\cmTC_c43ae.tlog\\".
+          Creazione directory "cmTC_33611.dir\\Debug\\".
+          Creazione directory "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8qmxuh\\Debug\\".
+          Creazione directory "cmTC_33611.dir\\Debug\\cmTC_33611.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_c43ae.dir\\Debug\\cmTC_c43ae.tlog\\unsuccessfulbuild". È stato specificato "AlwaysCreate".
+          Creazione di "cmTC_33611.dir\\Debug\\cmTC_33611.tlog\\unsuccessfulbuild". È stato specificato "AlwaysCreate".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c43ae.dir\\Debug\\\\" /Fd"cmTC_c43ae.dir\\Debug\\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_33611.dir\\Debug\\\\" /Fd"cmTC_33611.dir\\Debug\\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.16.27025.1 per x86
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
           
-          cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c43ae.dir\\Debug\\\\" /Fd"cmTC_c43ae.dir\\Debug\\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_33611.dir\\Debug\\\\" /Fd"cmTC_33611.dir\\Debug\\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
           
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-14j879\\Debug\\cmTC_c43ae.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-14j879/Debug/cmTC_c43ae.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-14j879/Debug/cmTC_c43ae.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_c43ae.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_c43ae.vcxproj -> C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-14j879\\Debug\\cmTC_c43ae.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\VC\\Tools\\MSVC\\14.16.27023\\bin\\HostX86\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8qmxuh\\Debug\\cmTC_33611.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-8qmxuh/Debug/cmTC_33611.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/matte/Documents/Study_C++/graphics/build/CMakeFiles/CMakeScratch/TryCompile-8qmxuh/Debug/cmTC_33611.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_33611.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_33611.vcxproj -> C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8qmxuh\\Debug\\cmTC_33611.exe
         FinalizeBuildStatus:
-          Eliminazione del file "cmTC_c43ae.dir\\Debug\\cmTC_c43ae.tlog\\unsuccessfulbuild" in corso.
-          Aggiornamento timestamp di "cmTC_c43ae.dir\\Debug\\cmTC_c43ae.tlog\\cmTC_c43ae.lastbuildstate".
-        Compilazione progetto "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-14j879\\cmTC_c43ae.vcxproj" (destinazioni predefinite) completata.
+          Eliminazione del file "cmTC_33611.dir\\Debug\\cmTC_33611.tlog\\unsuccessfulbuild" in corso.
+          Aggiornamento timestamp di "cmTC_33611.dir\\Debug\\cmTC_33611.tlog\\cmTC_33611.lastbuildstate".
+        Compilazione progetto "C:\\Users\\matte\\Documents\\Study_C++\\graphics\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8qmxuh\\cmTC_33611.vcxproj" (destinazioni predefinite) completata.
         
         Compilazione completata.
             Avvisi: 0
             Errori: 0
         
-        Tempo trascorso 00:00:01.71
+        Tempo trascorso 00:00:00.69
         
       exitCode: 0
   -
