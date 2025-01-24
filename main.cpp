@@ -1,7 +1,10 @@
 #include <SDL.h>
+#include <SDL_render.h>
 #include <SDL_ttf.h>
 #include <iostream>
 #include <cmath>
+#include <sstream>
+#include <string>
 #include "Circle.h"
 #include "Rectangle.h"
 
@@ -32,7 +35,7 @@ void CircleCollidingWithCube(void){
         rectangle.MoveRectangleUnderGravity(surface, rectangle, vx, vy);
         // check and manage collisions
         circle.CheckCollisionWithRectangle(surface, circle, rectangle);
-        circle.MoveCircleUniformly(surface, circle, vx, vy);
+        circle.MoveCircleUniformly(surface);
         //circle.MoveCircleUnderGravity(surface, circle, vx, vy);
 
         SDL_UpdateWindowSurface(window);
@@ -42,15 +45,26 @@ void CircleCollidingWithCube(void){
 
 void Pong(void){
     SDL_Init(SDL_INIT_VIDEO);
-    SDL_Window * window = SDL_CreateWindow("Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, 0);
+    TTF_Init();
+
+    SDL_Window * window = SDL_CreateWindow("Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
     SDL_Surface * surface = SDL_GetWindowSurface(window);
-
+    
+    SDL_Renderer * renderer = SDL_CreateSoftwareRenderer(surface);
+    TTF_Font * font = TTF_OpenFont("C:\\Users\\matte\\C++_libraries\\fonts\\pixelletters-font\\Pixellettersfull-BnJ5.ttf", 24);
+    SDL_Color textColor = {255, 255, 255, 255}; // White color
+    std::string textScore = "SCORE : ";
+    int score = 0;
+    std::stringstream oss;
+    oss << textScore << score; // Combine text and number
+    SDL_Surface * textSurface = TTF_RenderText_Solid(font, (oss.str()).c_str(), textColor);
+    SDL_Texture * textTexture = SDL_CreateTextureFromSurface(renderer, textSurface);
+    SDL_FreeSurface(textSurface);
+    
     int racket_height = 25; float ball_radius = 20.0f; float ball_vx = 3.0f; float ball_vy = 3.0f;
-
     Rectangle racket2 = Rectangle(350, SCREEN_HEIGHT-55, 100, racket_height, 0.0f, 0.0f, COLOR_NICE_ORANGE);
     Circle ball = Circle(SCREEN_WIDTH/2.0, 1.0f+ball_radius, ball_radius, ball_vx, ball_vy, COLOR_WHITE);
 
-    int score = 0;
     bool running = true;
     SDL_Event event;
 
@@ -77,23 +91,51 @@ void Pong(void){
             }
         }
 
-        racket2.FillRectangle(surface, racket2.color);
+        // Clear the screen
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // Black background
+        SDL_RenderClear(renderer);
+        // Render text
+        SDL_Rect textRect = {600, 20, 100, 40}; // Position and size of the text
+        SDL_RenderCopy(renderer, textTexture, NULL, &textRect);
 
+        racket2.FillRectangle(surface, racket2.color);
         ball.CheckCollisionWithRectangle(surface, ball, racket2);
-        ball.MoveCircleUniformly(surface, ball, ball.vx, ball.vy);
+        ball.MoveCircleUniformly(surface);
+
         if(ball.CheckCollisionWithTopEdge()){ 
             score++;
-            ball.vx += 0.25;
-            std::cout << "score = " << score << "\n";
+            ball.vx += 1.0;
+            oss.str(""); oss << textScore << score;
+            SDL_DestroyTexture(textTexture);
+            textSurface = TTF_RenderText_Solid(font, (oss.str()).c_str(), textColor);
+            textTexture = SDL_CreateTextureFromSurface(renderer, textSurface);
+            SDL_FreeSurface(textSurface);
         }
         else if(ball.CheckCollisionWithBottomEdge()){
             score--;
-            std::cout << "score = " << score << "\n";
-        }
+            oss.str(""); oss << textScore << score;
+            SDL_DestroyTexture(textTexture);
+            textSurface = TTF_RenderText_Solid(font, (oss.str()).c_str(), textColor);
+            textTexture = SDL_CreateTextureFromSurface(renderer, textSurface);
+            SDL_FreeSurface(textSurface);
+        }         
+
+        // Render updated text
+        //SDL_RenderCopy(renderer, textTexture, NULL, &textRect);
+        // Present the renderer
+        //SDL_RenderPresent(renderer);
 
         SDL_UpdateWindowSurface(window);
-        SDL_Delay(SCREEN_REFRESH_TIME);
+        SDL_Delay(SCREEN_REFRESH_TIME); 
     }
+
+    // Cleanup
+    SDL_DestroyTexture(textTexture);
+    TTF_CloseFont(font);
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+    TTF_Quit();
+    SDL_Quit();
 }
 
 

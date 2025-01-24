@@ -60,55 +60,55 @@ void Circle::CheckCollisionWithRectangle(SDL_Surface * surface, Circle &circle, 
     float y_top = (float) rectangle.rect.y;
     float y_bottom = (float) rectangle.rect.y + rectangle.rect.h;
     // simple quick condition which guarantees no collision
-    if(x_left > circle.x0 + circle.r || x_right < circle.x0 - circle.r || y_top > circle.y0 + circle.r || y_bottom < circle.y0 - circle.r){
+    if(x_left > x0 + r || x_right < x0 - r || y_top > y0 + r || y_bottom < y0 - r){
         return;
     }
     else{
-        float r_squared = circle.r * circle.r;
+        float r_squared = r * r;
         // check left-edge of the rectangle
-        if(x_left <= circle.x0 + circle.r){
+        if(x_left <= x0 + r){
             for(float y = y_top; y <= y_bottom; y += 1.0f){
-                if((x_left-circle.x0)*(x_left-circle.x0) + (y-circle.y0)*(y-circle.y0) <= r_squared){
+                if((x_left-x0)*(x_left-x0) + (y-y0)*(y-y0) <= r_squared){
                     circle.EraseCircle(surface);
-                    circle.x0 = x_left - circle.r;
-                    circle.vx = - circle.vx;
-                    circle.FillCircle(surface, circle.color);
+                    x0 = x_left - r;
+                    vx = - vx;
+                    circle.FillCircle(surface, color);
                     return;
                 }
             }
         }
         // check right-edge of the rectangle
-        if(x_right >= circle.x0 - circle.r){
+        if(x_right >= x0 - r){
             for(float y = y_top; y <= y_bottom; y += 1.0f){
-                if((x_right-circle.x0)*(x_right-circle.x0) + (y-circle.y0)*(y-circle.y0) <= r_squared){
-                    circle.EraseCircle(surface);
-                    circle.x0 = x_right + circle.r;
-                    circle.vx = - circle.vx;
-                    circle.FillCircle(surface, circle.color);
+                if((x_right-x0)*(x_right-x0) + (y-y0)*(y-y0) <= r_squared){
+                    EraseCircle(surface);
+                    x0 = x_right + r;
+                    vx = - vx;
+                    FillCircle(surface, color);
                     return;
                 }
             }
         }
         // check top-edge of the rectangle
-        if(y_top <= circle.y0 + circle.r){
+        if(y_top <= y0 + r){
             for(float x = x_left; x <= x_right; x += 1.0f){
                 if((x-x0)*(x-x0) + (y_top-y0)*(y_top-y0) <= r_squared){
-                    circle.EraseCircle(surface);
-                    circle.y0 = y_top - circle.r;
-                    circle.vy = - circle.vy;
-                    circle.FillCircle(surface, circle.color);
+                    EraseCircle(surface);
+                    y0 = y_top - r;
+                    vy = - vy;
+                    FillCircle(surface, color);
                     return;
                 }
             }
         }
         // check bottom-edge of the rectangle
-        if(y_bottom >= circle.y0 - circle.r){
+        if(y_bottom >= y0 - r){
             for(float x = x_left; x <= x_right; x += 1.0f){
                 if((x-x0)*(x-x0) + (y_bottom-y0)*(y_bottom-y0) <= r_squared){
-                    circle.EraseCircle(surface);
-                    circle.y0 = y_bottom + circle.r;
-                    circle.vy = - circle.vy;
-                    circle.FillCircle(surface, circle.color);
+                    EraseCircle(surface);
+                    y0 = y_bottom + r;
+                    vy = - vy;
+                    FillCircle(surface, color);
                     return;
                 }
             }
@@ -119,23 +119,23 @@ void Circle::CheckCollisionWithRectangle(SDL_Surface * surface, Circle &circle, 
 }
 
 
-void Circle::MoveCircleUniformly(SDL_Surface * surface, Circle &circle, float &vx, float & vy){
-    circle.EraseCircle(surface);
-    if(circle.CheckCollisionWithBottomEdge()){
-        circle.vy = - circle.vy;
+void Circle::MoveCircleUniformly(SDL_Surface * surface){
+    EraseCircle(surface);
+    if(CheckCollisionWithBottomEdge()){
+        vy = - vy;
     }
-    else if(circle.CheckCollisionWithTopEdge()){
-        circle.vy = -circle.vy;
+    else if(CheckCollisionWithTopEdge()){
+        vy = -vy;
     }
-    if(circle.CheckCollisionWithLeftEdge()){
-        circle.vx = - circle.vx;
+    if(CheckCollisionWithLeftEdge()){
+        vx = - vx;
     }
-    else if(circle.CheckCollisionWithRightEdge()){
-        circle.vx = - circle.vx;
+    else if(CheckCollisionWithRightEdge()){
+        vx = - vx;
     }
-    circle.x0 = circle.x0 + circle.vx;
-    circle.y0 = circle.y0 + circle.vy;
-    circle.FillCircle(surface, COLOR_WHITE);
+    x0 = x0 + vx;
+    y0 = y0 + vy;
+    FillCircle(surface, COLOR_WHITE);
 }
 
 void Circle::MoveCircleUnderGravity(SDL_Surface * surface, Circle &circle, float &vx, float & vy){

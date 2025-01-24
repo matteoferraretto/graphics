@@ -26,7 +26,7 @@ public:
     void CheckCollisionWithRectangle(SDL_Surface * surface, Circle &circle, Rectangle rectangle);
     void FillCircle(SDL_Surface * surface, int color);
     void EraseCircle(SDL_Surface * surface);
-    void MoveCircleUniformly(SDL_Surface * surface, Circle & circle, float & vx, float & vy);
+    void MoveCircleUniformly(SDL_Surface * surface);
     void MoveCircleUnderGravity(SDL_Surface * surface, Circle & circle, float & vx, float & vy);
     ~Circle();
 };
